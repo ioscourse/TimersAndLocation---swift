@@ -33,6 +33,42 @@ class TimerViewController: UITableViewController{
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     //4) Add func loaddb to load database and refresh table
+//    func FundsAvaailable()
+//    {
+////        The idea would be to calculate total available funds by comparing it to Spending, savings, and income. So,
+////        Total available = bank balance - savings - spending + income
+//        
+//        let appDelegate =
+//        UIApplication.sharedApplication().delegate as! AppDelegate
+//        let managedContext = appDelegate.managedObjectContext
+//        let fetchRequest = NSFetchRequest(entityName:"NmaeOfEntity")
+//        var error: NSError?
+//        
+//        do {
+//            let fetchedResults = try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
+//            if let results = fetchedResults {
+//                print("===\(results)")
+//                // Calculate the grand total...
+//                var totalAvailable = 0
+//                for order in results {
+//                    let fBankBal = order.valueForKey("bankbal") as! Int
+//                    let fBSavings = order.valueForKey("savings") as! Int
+//                    let fSpending = order.valueForKey("spendingy") as! Int
+//                    let fIncome = order.valueForKey("income") as! Int
+//                    totalAvailable += fBankBal - fBSavings - fSpending + fIncome
+//                }
+//                print("Grand total = \(totalAvailable)")
+//            } else {
+//                print("Could not fetch \(error), \(error!.userInfo)")
+//            }
+//        } catch let error as NSError {
+//            // failure
+//            print("Fetch failed: \(error.localizedDescription)")
+//        }
+//    }
+    
+    
+    
     func loaddb()
     {
         
